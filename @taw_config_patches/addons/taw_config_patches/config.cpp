@@ -19,35 +19,10 @@ class CfgVehicles {
 		class Components;
 	};
 	class Heli_light_03_base_F: Helicopter_Base_F {
+		ace_hellfire_addLaserDesignator = 1;
 		class Components: Components {
 			class SensorsManagerComponent {
 				class Components {
-					class IRSensorComponent : SensorTemplateIR {
-						class AirTarget {
-							minRange = 50;
-							maxRange = 8000;
-						};
-						class GroundTarget {
-							minRange = 50;
-							maxRange = 4000;
-						};
-						// TODO: Fix so that the animation works
-						//animDirection = "mainTurret";
-						angleRangeHorizontal = 180;
-					};
-					class VisualSensorComponent: SensorTemplateVisual {
-						class AirTarget {
-							minRange = 50;
-							maxRange = 8000;
-						};
-						class GroundTarget {
-							minRange = 50;
-							maxRange = 4000;
-						};
-						// TODO: Fix so that the animation works
-						//animDirection = "mainTurret";
-						angleRangeHorizontal = 180;
-					};
 					class LaserSensorComponent: SensorTemplateLaser { };
 				}
 			}
