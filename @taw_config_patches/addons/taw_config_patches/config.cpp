@@ -11,6 +11,7 @@ class CfgPatches
 class SensorTemplateIR;
 class SensorTemplateVisual;
 class SensorTemplateLaser;
+class Turrets;
 
 class CfgVehicles {
 	class Helicopter;
@@ -23,25 +24,29 @@ class CfgVehicles {
 				class Components {
 					class IRSensorComponent : SensorTemplateIR {
 						class AirTarget {
-							minRange = 0;
-							maxRange = 10000;
+							minRange = 50;
+							maxRange = 8000;
 						};
 						class GroundTarget {
-							minRange = 0;
-							maxRange = 6000;
+							minRange = 50;
+							maxRange = 4000;
 						};
-						animDirection = "mainTurret";
+						// TODO: Fix so that the animation works
+						//animDirection = "mainTurret";
+						angleRangeHorizontal = 180;
 					};
 					class VisualSensorComponent: SensorTemplateVisual {
 						class AirTarget {
-							minRange = 0;
-							maxRange = 10000;
+							minRange = 50;
+							maxRange = 8000;
 						};
 						class GroundTarget {
-							minRange = 0;
-							maxRange = 6000;
+							minRange = 50;
+							maxRange = 4000;
 						};
-						animDirection = "mainTurret"
+						// TODO: Fix so that the animation works
+						//animDirection = "mainTurret";
+						angleRangeHorizontal = 180;
 					};
 					class LaserSensorComponent: SensorTemplateLaser { };
 				}
