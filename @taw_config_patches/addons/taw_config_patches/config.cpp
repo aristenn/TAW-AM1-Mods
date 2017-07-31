@@ -15,7 +15,7 @@ class Turrets;
 
 class CfgVehicles {
 	class Helicopter;
-	class Helicopter_Base_F {
+	class Helicopter_Base_F: Helicopter {
 		class Components;
 	};
 	class Heli_light_03_base_F: Helicopter_Base_F {
